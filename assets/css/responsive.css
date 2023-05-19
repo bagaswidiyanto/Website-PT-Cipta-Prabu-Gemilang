@@ -1,0 +1,119 @@
+@media only screen and (max-width: 600px)  {
+    .business .img {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .about-company .company {
+        padding: 2rem 5rem 3rem;
+    }
+
+    .creatif .img {
+        height: calc(100px + -20px);
+    }
+}
+
+@media only screen and (min-width: 768px)  {
+    .portofolio .image_box {
+        width: 33.33333%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .top-feature .dbm_column::before {
+        content: '';
+        position: absolute;
+        height: 250px;
+        width: 710px;
+        top: -100%;
+        left: -500px;
+        background-color: var(--secondary);
+    }
+    
+    .top-feature .dbm_column::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 100px 0 100px 105px;
+        border-color: transparent transparent transparent var(--secondary);
+        top: 50%;
+        right: 8px;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+    }
+
+
+    .portofolio .box-image {
+        flex-wrap: nowrap;
+        width: 100%;
+        box-sizing: border-box;
+        height: 80vh;
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .portofolio .image_box {
+        flex: 1;
+        transition: .5s;
+        margin: 0 .5%;
+        box-sizing: 0px 0px 0px #ccc;
+        width: auto;
+    }
+
+    .portofolio .image_box .img {
+        height: calc(100% - 0vh);
+    }
+
+    .portofolio .image_box img {
+        width: 200%;
+        height: calc(100% - 0vh);
+        object-fit: cover;
+        transition: 1.5s;
+    }
+
+    .portofolio .image_box:hover {
+        flex: 1 1 50%;
+    }
+
+    .portofolio .image_box:hover img {
+        width: 100%;
+    }
+
+    .portofolio .image_box:hover .content p {
+        display: block;
+    }
+}
+
+
+
+@media only screen and (min-width: 1200px)  {
+    .top-feature .dbm_column::before {
+        height: 200px;
+        width: 770px;
+    }
+    
+    .top-feature .dbm_column::after {
+        border-width: 90px 0 90px 105px;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    .main-services .service .img {
+        height: 140px;
+        max-height: 140px;
+    }
+
+    .main-services .service:hover .img {
+        height: 150px;
+        max-height: 150px;
+    }
+}
