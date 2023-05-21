@@ -97,7 +97,7 @@
 @media only screen and (min-width: 1200px)  {
     .top-feature .dbm_column::before {
         height: 200px;
-        width: 770px;
+        width: 830px;
     }
     
     .top-feature .dbm_column::after {

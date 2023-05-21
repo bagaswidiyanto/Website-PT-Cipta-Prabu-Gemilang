@@ -77,20 +77,77 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
-    // Testimonials carousel
-    // $(".test-carousel").owlCarousel({
-    //     autoplay: true,
-    //     smartSpeed: 1000,
-    //     items: 4,
-    //     slideBy: 4,
-    //     dots: false,
-    //     loop: true,
-    //     nav: false,
-    //     navText : [
-    //         '<i class="bi bi-chevron-left"></i>',
-    //         '<i class="bi bi-chevron-right"></i>'
-    //     ]
-    // });
+    
+    var cardSlider = new Swiper('.trading-slider', {
+        autoplay: false,
+        // {
+        // 	delay: 4000,
+        // 	disableOnInteraction: false
+        // },
+        loop: true,
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev'
+        // },
+        slidesPerView: 2,
+        spaceBetween: 170,
+        breakpoints: {
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 45
+            },
+            // when window width is >= 640px
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 70
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 70
+            },
+            // when window is <= 991px
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 90,
+            },
+        }
+    });
+    var cardSlider = new Swiper('.video-portofolio-slider', {
+        autoplay: false,
+        // {
+        // 	delay: 4000,
+        // 	disableOnInteraction: false
+        // },
+        loop: true,
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev'
+        // },
+        slidesPerView: 4,
+        spaceBetween: 30,
+        breakpoints: {
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 45
+            },
+            // when window width is >= 640px
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 70
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 70
+            },
+            // when window is <= 991px
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 90,
+            },
+        }
+    });
 
 
     var cardSlider = new Swiper('.test-slider', {
