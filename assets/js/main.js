@@ -120,21 +120,22 @@
         // 	disableOnInteraction: false
         // },
         loop: true,
-        // navigation: {
-        //     nextEl: '.swiper-button-next',
-        //     prevEl: '.swiper-button-prev'
-        // },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
         slidesPerView: 4,
         spaceBetween: 30,
         breakpoints: {
             // when window width is >= 480px
             480: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 45
             },
             // when window width is >= 640px
             600: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 70
             },
             767: {
@@ -148,25 +149,62 @@
             },
         }
     });
-
-
-    var cardSlider = new Swiper('.test-slider', {
+    
+    
+    var cardSlider = new Swiper('.promo-homes-slider', {
         autoplay:
          false,
-        // {
+         // {
+        // 	delay: 4000,
+        // 	disableOnInteraction: false
+        // },
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+    });
+    
+
+    var cardSlider = new Swiper('.hero-profile-slider', {
+        autoplay:
+         false,
+         // {
         // 	delay: 4000,
         // 	disableOnInteraction: false
         // },
         loop: true,
-        // navigation: {
-        //     nextEl: '.swiper-button-next',
-        //     prevEl: '.swiper-button-prev'
-        // },
-        slidesPerView: 4,
-        slidesPerGroup: 4,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        slidesPerView: 1,
         spaceBetween: 0,
     });
 
+     // Testimonials carousel
+     $(".visi-slider").owlCarousel({
+        autoplay: false,
+        smartSpeed: 1000,
+        loop: true,
+        // center: true,
+        margin:30,
+        dots: false,
+        responsive: {
+            0:{
+                items:2
+            },
+            768:{
+                items:2
+            },
+            992:{
+                items:2
+            }
+        }
+    });
     
 })(jQuery);
 

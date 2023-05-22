@@ -18,6 +18,16 @@
     .portofolio .image_box {
         width: 33.33333%;
     }
+
+    .tab-profile .tab-content .tab-pane .owl-carousel .owl-stage-outer {
+        margin-left: 20%;
+    }
+
+    .tab-profile .tab-content .tab-pane .bg-misi {
+        opacity: .3;
+    }
+
+    
 }
 
 @media only screen and (min-width: 992px) {
@@ -90,18 +100,49 @@
     .portofolio .image_box:hover .content p {
         display: block;
     }
+
+
+    .tab-profile .tab-content .tab-pane .bg-misi {
+        opacity: 1;
+    }
+
+
+    .hero-header-profile.hero-news {
+        overflow: hidden;
+        height: 55vh;
+        max-height: 55vh;
+    }
+    
 }
 
 
 
 @media only screen and (min-width: 1200px)  {
     .top-feature .dbm_column::before {
-        height: 200px;
-        width: 830px;
+        width: 770px;
     }
     
     .top-feature .dbm_column::after {
         border-width: 90px 0 90px 105px;
+    }
+
+    .hero-header-profile.hero-news {
+        height: 65vh;
+        max-height: 65vh;
+    }
+
+    .hero-header-profile.hero-news .swiper-button-prev {
+        top: 32%;
+    }
+    .hero-header-profile.hero-news .swiper-button-next {
+        top: 32%;
+    }
+}
+
+@media only screen and (min-width: 1400px)  {
+    .top-feature .dbm_column::before {
+        height: 200px;
+        width: 830px;
     }
 }
 

@@ -6,7 +6,8 @@
     --fouth: #FFC700;
     --light: #FFFFFF;
     --dark: #0F4229;
-    --font-family: 'Montserrat';
+    --bg-primary-gradation:  linear-gradient(180deg, #254061 0%, #4F81BD 100%);
+    --font-family: 'Montserrat', sans-serif;
 }
 
 .back-to-top {
@@ -21,7 +22,7 @@
 
 body {
     font-family: var(--font-family);
-    color: #000000;
+    color: var(--primary);
 }
 
 h1,
@@ -79,6 +80,9 @@ p {
     z-index: 1;
 }
 
+.w-fit {
+    width: fit-content;
+}
 /*** Button ***/
 .btn {
     transition: .5s;
@@ -229,6 +233,17 @@ p {
     object-fit: cover;
 }
 
+.hero-header.hero-developer {
+    margin-bottom: 0;
+    padding: 4rem 0 9rem;
+    background-image: url(../img/bg-hero-developer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+}
+
 .hero-header .progress-header .img {
     height: calc(100px + -20px)
 }
@@ -331,7 +346,7 @@ p {
     margin-top: calc(var(--bs-gutter-y) * -1);
     margin-right: calc(var(--bs-gutter-x) / -2);
     margin-left: calc(var(--bs-gutter-x) / -2);
-    padding: 4% 0;
+    padding: 4% 0 0;
 }
 
 .portofolio .box-image > * {
@@ -388,7 +403,7 @@ p {
 }
 
 .portofolio .image_box .content span {
-    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
     display: block;
     /* height: 10vh; */
     line-height: 1;
@@ -412,10 +427,11 @@ p {
 /*** Main Service ***/
 .main-services .service {
     transition: .5s;
+    border-bottom: 5px solid transparent;
 }
 
 .main-services .service:hover {
-    box-shadow: 5px 8px 11px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 8px 11px rgba(0, 0, 0, 0.15);
     border-bottom: 5px solid var(--primary);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -512,15 +528,41 @@ p {
 /*** Quote ***/
 .quote .company .content p {
     color: #575757;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .quote .form-quote p {
     font-size: .8rem;
 }
 
+.quote .btn.btn-social {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid rgba(256, 256, 256, .1);
+    border-radius: 40px;
+    transition: .3s;
+    background: var(--primary);
+}
+
+.quote .btn.btn-social:hover {
+    color: var(--light);
+    background: var(--bg-primary-gradation);
+}
+
 
 /*============== Menu Kontraktor ==============*/
+.video-portofolio .swiper-pagination.swiper-pagination-bullets {
+    bottom: -5px;
+}
+
+.video-portofolio .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--primary);
+}
 .video-portofolio .box-video iframe {
     width: 100%;
 }
@@ -569,6 +611,340 @@ p {
     font-weight: 800;
     margin-bottom: 2rem;
 }
+
+
+/*============== Menu Developer ==============*/
+.promo-homes {
+    background: var(--bg-primary-gradation);
+}
+
+.promo-homes .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    background: transparent;
+    border: 1px solid var(--light);
+}
+
+.promo-homes .swiper-pagination.swiper-pagination-bullets {
+    bottom: -5px;
+}
+
+.promo-homes .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--light);
+}
+.promo-homes .produk-tab .nav-tabs .nav-item {
+    width: 17%;
+    padding: 0;
+    margin-right: .6rem;
+    margin-top: .6rem;
+    max-height: 60px;
+    height: 61px;
+    overflow: hidden;
+}
+
+.promo-homes .produk-tab .nav-tabs .nav-item .nav-link {
+    padding: 0;
+}
+
+.promo-homes .heading-title span {
+    font-size: calc(18px + (28 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: var(--light);
+}
+
+.promo-homes .heading-price span {
+    font-size: calc(18px + (28 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: var(--light);
+    font-weight: 900;
+}
+
+.promo-homes .facility img {
+    max-width: 20px;
+    width: 20px;
+}
+
+.promo-homes .facility p {
+    color: var(--light);
+    font-weight: 700;
+    font-size: calc(14px + (20 - 18) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.promo-homes .widget .more-btn a {
+    font-size: 13px;
+}
+
+.all-types .type-area .widget {
+    transition: all .3s ease;
+    border-bottom: 5px solid transparent;
+}
+
+.all-types .type-area .widget:hover {
+    box-shadow: 5px 8px 11px rgba(0, 0, 0, 0.15);
+    border-bottom: 5px solid var(--primary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.all-types .type-area .widget .img {
+    overflow: hidden;
+}
+
+.all-types .type-area .widget .img img {
+    transition: .3s all;
+}
+
+.all-types .type-area .widget:hover .img img {
+    transform: scale(1.1);
+}
+
+.all-types .type-area .widget .caption .card-title {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.all-types .type-area .widget .caption .card-price {
+    font-size: .8rem;
+    font-weight: 900;
+}
+
+.all-types .type-area .widget .caption .more-btn a {
+    border: 1px solid var(--primary);
+    font-weight: 700;
+    font-size: .6rem;
+    padding: .4rem;
+}
+
+.all-types .type-pagination {
+    margin-top:80px
+}
+.all-types .type-pagination .page-link {
+    font-size:14px;
+    position:relative;
+    display:block;
+    padding:0;
+    text-align:center;
+    margin-left:-1px;
+    line-height:45px;
+    width:45px;
+    height:45px;
+    border-radius:0 !important;
+    color:#8a8a8a;
+    border:1px solid #f0e9ff;
+    margin-right:10px
+}
+.all-types .type-pagination .page-link i,.type-pagination .page-link span {
+    font-size:13px
+}
+.all-types .type-pagination .page-link:hover {
+    background: var(--bg-primary-gradation);
+    border-color:#f0e9ff;
+    color:var(--light);
+    font-weight: 700;
+}
+.all-types .type-pagination .page-item.active .page-link {
+    background: var(--bg-primary-gradation);
+    border-color:#f0e9ff;
+    color:var(--light);
+    font-weight: 700;
+}
+.all-types .type-pagination .page-item:last-child .page-link {
+    margin-right:0
+}
+
+
+/*============== Menu Profile ==============*/
+.hero-header-profile {
+    overflow: hidden;
+}
+.hero-header-profile .img::before {
+    content: "";
+    background: #303030;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-header-profile .img img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.hero-header-profile .swiper-button-prev {
+    background-image: url("../img/arrow_left.svg");
+    background-size: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.hero-header-profile .swiper-button-next {
+    background-image: url("../img/arrow_right.svg");
+    background-size: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+
+.tab-profile .nav-tabs {
+    position: relative;
+}
+
+.tab-profile .nav-tabs::before {
+    content: "";
+    border-bottom: 3px solid #CACACA;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+
+.tab-profile .nav-tabs .nav-item + .nav-item {
+    margin-left: 3rem;
+}
+
+.tab-profile .nav-tabs .nav-link {
+    position: relative;
+    border: 0;
+    padding: .5rem 0 1rem 0;
+    color: #CACACA;
+    font-weight: 700;
+}
+
+
+
+.tab-profile .nav-tabs .nav-item .nav-link.active {
+    color: var(--primary);
+}
+
+.tab-profile .nav-tabs .nav-item .nav-link.active::before {
+    content: "";
+    border-bottom: 3px solid var(--primary);
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+
+.tab-profile .tab-content .tab-pane .bg-misi {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 570px;
+    z-index: -2;
+    opacity: .2;
+}
+
+.tab-profile .tab-content .tab-pane .misi ul li + li {
+    margin-top: 1rem;
+}
+
+
+
+/*============== Menu News ==============*/
+.news .news-area {
+    padding-top: 5rem;
+}
+
+.news .news-area .widget {
+    transition: .5s;
+    border-bottom: 5px solid transparent;
+}
+
+.news .news-area .widget:hover {
+    box-shadow: 5px 8px 11px rgba(0, 0, 0, 0.15);
+    border-bottom: 5px solid var(--primary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.news .news-area .widget .img {
+    overflow: hidden;
+}
+
+.news .news-area .widget .img img {
+    transition: all .3s ease-in-out;
+    width: 100%;
+}
+
+.news .news-area .widget .img img:hover {
+    transform: scale(1.2);
+}
+
+.news .news-area .widget .card-content small {
+    color: #8D8B8B;
+    font-size: .8rem;
+}
+
+.news .news-area .widget .card-content .card-title {
+    font-size: .9rem;
+    line-height: 1.2;
+}
+
+
+.news .news-area .news-pagination {
+    margin-top:80px
+}
+.news .news-area .news-pagination .page-link {
+    font-size:14px;
+    position:relative;
+    display:block;
+    padding:0;
+    text-align:center;
+    margin-left:-1px;
+    line-height:45px;
+    width:45px;
+    height:45px;
+    border-radius:0 !important;
+    color:#8a8a8a;
+    border:1px solid #f0e9ff;
+    margin-right:10px
+}
+.news .news-area .news-pagination .page-link i,.type-pagination .page-link span {
+    font-size:13px
+}
+.news .news-area .news-pagination .page-link:hover {
+    background: var(--bg-primary-gradation);
+    border-color:#f0e9ff;
+    color:var(--light);
+    font-weight: 700;
+}
+.news .news-area .news-pagination .page-item.active .page-link {
+    background: var(--bg-primary-gradation);
+    border-color:#f0e9ff;
+    color:var(--light);
+    font-weight: 700;
+}
+.news .news-area .news-pagination .page-item:last-child .page-link {
+    margin-right:0
+}
+
+
+
+.single-news .news-area .card-title {
+    font-size: 1.7rem;
+    font-weight: 900;
+    line-height: 1.2;
+    tex
+}
+
+
+
 
 
 /*** Footer ***/
