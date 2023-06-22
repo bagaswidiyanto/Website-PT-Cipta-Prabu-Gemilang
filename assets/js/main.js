@@ -39,7 +39,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 300, 'easeInOutExpo');
         return false;
     });
 
@@ -125,7 +125,7 @@
             type: 'bullets',
             clickable: true
         },
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 30,
         breakpoints: {
             // when window width is >= 480px
@@ -144,7 +144,7 @@
             },
             // when window is <= 991px
             991: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 90,
             },
         }

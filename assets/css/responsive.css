@@ -1,28 +1,221 @@
 @media only screen and (max-width: 600px)  {
+    .business .img {
+        height: auto;
+    }
+}
 
+@media only screen and (min-width: 437px) {
+    .latest-news .side-news .widget .entry-img {
+        height: 120px;
+    }
+
+    .news .news-area .widget .img {
+        height: 250px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
+    .about-company .company {
+        padding: 2rem 5rem 3rem;
+    }
 
+    .creatif .img {
+        height: calc(100px + -20px);
+    }
+
+    .latest-news .side-news .widget .entry-img {
+        height: 150px;
+    }
+
+    .news .news-area .widget .img {
+        height: 320px;
+    }
 }
 
 @media only screen and (min-width: 768px)  {
-   
-}
+    .portofolio .image_box {
+        width: 33.33333%;
+    }
 
-@media only screen and (min-width: 992px) {
+    .tab-profile .tab-content .tab-pane .owl-carousel .owl-stage-outer {
+        margin-left: 20%;
+    }
+
+    .tab-profile .tab-content .tab-pane .bg-misi {
+        opacity: .3;
+    }
+
+    .hero-header {
+        padding: 4rem 0 9rem;
+    }
+
+    .hero-header.hero-developer {
+        padding: 4rem 0 9rem;
+    }
+
+    .latest-news .side-news .widget .entry-img {
+        height: 100px;
+    }
+
+    .news .news-area .widget .img {
+        height: 210px;
+    }
+
     
 }
 
+@media only screen and (min-width: 992px) {
+    .top-feature .dbm_column::before {
+        content: '';
+        position: absolute;
+        height: 250px;
+        width: 710px;
+        top: -130%;
+        left: -500px;
+        background-color: var(--secondary);
+    }
+    
+    .top-feature .dbm_column::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 100px 0 100px 105px;
+        border-color: transparent transparent transparent var(--secondary);
+        top: 50%;
+        right: 8px;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+    }
+
+
+    .portofolio .box-image {
+        flex-wrap: nowrap;
+        width: 100%;
+        box-sizing: border-box;
+        height: 80vh;
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .portofolio .image_box {
+        flex: 1;
+        transition: .5s;
+        margin: 0 .5%;
+        box-sizing: 0px 0px 0px #ccc;
+        width: auto;
+    }
+
+    .portofolio .image_box .img {
+        height: calc(100% - 0vh);
+    }
+
+    .portofolio .image_box img {
+        width: 200%;
+        height: calc(100% - 0vh);
+        object-fit: cover;
+        transition: 1.5s;
+    }
+
+    .portofolio .image_box:hover {
+        flex: 1 1 50%;
+    }
+
+    .portofolio .image_box:hover img {
+        width: 100%;
+    }
+
+    .portofolio .image_box:hover .content p {
+        display: block;
+    }
+
+
+    .tab-profile .tab-content .tab-pane .bg-misi {
+        opacity: 1;
+    }
+
+
+    .hero-header-profile.hero-news {
+        overflow: hidden;
+        height: 55vh;
+        max-height: 55vh;
+    }
+
+    .latest-news .side-news .widget .entry-img {
+        height: 135px;
+    }
+
+    .news .news-area .widget .img {
+        height: 180px;
+    }
+    
+}
+
+
+
 @media only screen and (min-width: 1200px)  {
-   
+    .top-feature .dbm_column::before {
+        width: 770px;
+    }
+    
+    .top-feature .dbm_column::after {
+        border-width: 90px 0 90px 105px;
+    }
+
+    .hero-header-profile.hero-news {
+        height: 65vh;
+        max-height: 65vh;
+    }
+
+    .hero-header-profile.hero-news .swiper-button-prev {
+        top: 32%;
+    }
+    .hero-header-profile.hero-news .swiper-button-next {
+        top: 32%;
+    }
+
+    .latest-news .side-news .widget .entry-img {
+        height: 160px;
+    }
+
+    .news .news-area .widget .img {
+        height: 220px;
+    }
+
 }
 
 @media only screen and (min-width: 1400px)  {
- 
+    .top-feature .dbm_column::before {
+        height: 200px;
+        width: 830px;
+    }
+
+    .latest-news .side-news .widget .entry-img {
+        height: 190px;
+    }
+
+    .news .news-area .widget .img {
+        height: 260px;
+    }
+
+    
 }
 
 
 @media only screen and (min-width: 600px) and (max-width: 991px) {
- 
+    .main-services .service .img {
+        height: 140px;
+        max-height: 140px;
+    }
+
+    .main-services .service:hover .img {
+        height: 150px;
+        max-height: 150px;
+    }
 }
